@@ -1,3 +1,6 @@
+// John Carlo M. Liagon 
+// October 10, 2024
+// Assignment
 class Student {
     
     // Attributes
@@ -14,28 +17,28 @@ class Student {
     }
     
     // Getter methods
-    public String studentID() {
+    public String getStudentID() {
         return studentID;
     }
     
-    public String studentName() {
+    public String getStudentName() {
         return name;
     }
     
-    public int studentAge() {
+    public int getStudentAge() {
         return age;
     }
     
-    public double studentGpa() {
+    public double getStudentGpa() {
         return gpa;
     }
     
-    // Sette methods
-    public void gpa(double gpa) {
+    // Setter methods
+    public void setGpa(double gpa) {
         this.gpa = gpa;
     }
     
-    public void age(int age) {
+    public void setAge(int age) {
         this.age = age;
     }
     
@@ -57,10 +60,10 @@ public class Main {
         
         // Display details of both students
           System.out.println("Details of Student 1: ");
-        student1.displayDetails();
+        student1.displayStudentDetails();
 
         System.out.println("Details of Student 2: ");
-        student2.displayDetails();
+        student2.displayStudentDetails();
 
         // Update the GPA and age of student1
         student1.setGpa(3.9);
@@ -68,6 +71,6 @@ public class Main {
 
         // Display the updated details of student1
         System.out.println("Updated details of Student 1:");
-        student1.displayDetails();
+        student1.displayStudentDetails();
     }
 }
